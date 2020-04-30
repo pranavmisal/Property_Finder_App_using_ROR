@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.property-thumbnail {
+	height: 170px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
 .property-main-photo {
 	height: 900px;
 	background-size: cover;

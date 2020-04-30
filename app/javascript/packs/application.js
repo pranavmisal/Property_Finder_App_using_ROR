@@ -2,6 +2,7 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+//= require toastr
 
 require("@rails/ujs").start()
 
@@ -10,6 +11,13 @@ global.$ = global.jQuery = jQuery
 window.$ = window.jQuery = jQuery
 
 require("bootstrap")
+//require("@fontawesome/fontawesome-free")
+
+import toastr from 'toastr';
+toastr.options = {
+	progressBar: true
+}
+global.toastr = toastr;
 
 require("./includes/properties");
 

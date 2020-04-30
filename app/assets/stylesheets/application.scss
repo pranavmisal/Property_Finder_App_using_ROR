@@ -12,6 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require toastr
  */
 
-@import 'bootstrap/scss/bootstrap'
+@import 'bootstrap/scss/bootstrap';
+@import 'toastr/build/toastr.min';
+@import "toastr";

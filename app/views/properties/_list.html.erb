@@ -1,0 +1,23 @@
+<% properties.each do |property| %>
+<div class="col-4 py-3">
+	<div class="property border">
+		<%= link_to(property_thumbnail(property), property_path(property)) %>
+		<div class="property-summary p-3">
+			<h3 class="h5 mt-3 text-dark"><%= link_to property.name, property_path(property) %></h3>
+			<span class="mr-2">
+				<%= property.rooms %>
+				<i class="fa fa-bed ml-1" aria-hidden="true"></i> 
+			</span>
+			<span class="mr-2">
+				<%= property.bathrooms %>
+				<i class="fa fa-bath ml-1" aria-hidden="true"></i> 
+			</span>	
+			<span class="mr-2">
+				<%= property.parking_spaces %>
+				<i class="fa fa-car ml-1" aria-hidden="true"></i> 
+			</span>
+			<p class="mt-2"><%= property.address %></p>
+		</div>
+	</div>
+</div>
+<% end %>
