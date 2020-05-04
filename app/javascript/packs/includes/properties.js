@@ -1,7 +1,7 @@
 $(function(){
 	$("#show-tel").on("click", function(){
 		var $this = $(this);
-		$this.text($this.data("telephone"));
+		$this.find("span").text($this.data("telephone"));
 	});
 
 	$("#toggleDetails").on("click", function(){
