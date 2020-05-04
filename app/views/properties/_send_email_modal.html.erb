@@ -2,13 +2,13 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message for <%= @agent.first_name %></h5>
+                <h5 class="modal-title" id="exampleModalLabel">New Message for <%= @agent.first_name %></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <%= form_tag email_agent_path, id: "email-agent" do %>
+                <%= form_tag email_agent_url, id: "email-agent" do %>
                     <%= hidden_field_tag :agent_id, @agent.id %>
 
                     <div class="form-group">
@@ -33,9 +33,17 @@
                 <% end %>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success" id="send-message-to-agent">Send message</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Send message
+                </button>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- https://www.youtube.com/watch?v=3UrvdFlWakw
+33:32 -->
