@@ -13,4 +13,9 @@ $(function(){
 			$(this).text("Show More")
 		}
 	});
+	// modal script
+	$('#contact-modal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget);
+		var modal = $(this)
+	});
 });
