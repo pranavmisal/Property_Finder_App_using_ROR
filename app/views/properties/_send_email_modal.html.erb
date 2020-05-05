@@ -8,7 +8,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <%= form_tag email_agent_url, id: "email-agent" do %>
+                <%= form_tag email_agent_path, id: "email-agent" do %>
                     <%= hidden_field_tag :agent_id, @agent.id %>
 
                     <div class="form-group">
@@ -36,7 +36,7 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">
                     Close
                 </button>
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-success" id="send-message-to-agent">
                     Send message
                 </button>
             </div>
@@ -44,6 +44,3 @@
     </div>
 </div>
 
-
-<!-- https://www.youtube.com/watch?v=3UrvdFlWakw
-33:32 -->
