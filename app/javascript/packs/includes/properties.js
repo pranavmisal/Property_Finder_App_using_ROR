@@ -23,7 +23,7 @@ $(function(){
 
 		$.ajax({
 			url: "/agent/message",
-			method: "POST",
+			method: "post",
 			dataType: "json",
 			data: {
 				agent_id: agent_id,

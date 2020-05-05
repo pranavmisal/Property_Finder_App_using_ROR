@@ -74,11 +74,7 @@ class PropertiesController < ApplicationController
     email = params[:email]
     message = params[:message]
 
-    logger.debug "agent: #{agent_id}"
-    logger.debug "First name: #{first_name}"
-    logger.debug "Last name: #{last_name}"
-    logger.debug "Email: #{email}"
-    logger.debug "message: #{message}"
+    ContactMailer.email_agent( agent_id, first_name, last_name, email, message ).deliver_now
 
     # response to script
     respond_to do |format|
