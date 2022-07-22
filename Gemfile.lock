@@ -414,7 +414,7 @@ GEM
     tilt (2.0.10)
     toastr-rails (1.0.3)
       railties (>= 3.1.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uber (0.1.0)
     unf (0.1.4)
